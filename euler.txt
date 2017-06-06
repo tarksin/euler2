@@ -278,6 +278,45 @@ Find the product abc.
   end  #y
 end  #x
 
+
+#10  Summation of primes
+
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+Find the sum of all the primes below two million.
+ 
+require 'prime'
+theSum=0
+Prime.each(2000000) do |prime|
+  theSum+=prime # Ret => [2, 3, 5, 7, 11, ..., 97]
+  end
+puts(theSum.to_s)
+    
+(Is it cheating to use Ruby prime?() function?  My code timed out on cloud9:
+
+transitor= 11  
+divisor=3
+primeSum=28  #2,3,5,7,11
+theMod=0
+isPrime=true
+while transitor< 2000000  
+  transitor+=2
+  divisor=3
+  isPrime=true
+  while divisor < transitor/2
+    divisor+=2
+    theMod=transitor % divisor
+      if theMod == 0 
+      isPrime=false;
+      break
+      end # if 
+  end #while divisor < transitor/2
+  if isPrime 
+    primeSum+=transitor
+  end # while t < 200
+end   # while transit < 2 000 000
+
+puts('Final: t=' + transitor.to_s + '  S=' + primeSum.to_s) 
+
 31875000
 
 
