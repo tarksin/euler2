@@ -459,8 +459,10 @@ end #for i
 
 puts 'score ' + score.to_s
 
+#12   NOT YET ......................
 
-#13 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+#13    completed 22 Oct 2018
+Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 (?? What am I missing? This was too easy.....)
 
 [prob13.py]
@@ -475,7 +477,7 @@ print( str(t_sum)[:10])
 
 
 
-#14
+#14   completed 22 Oct 2018
 Longest Collatz sequence
 Problem 14 
 The following iterative sequence is defined for the set of positive integers:
