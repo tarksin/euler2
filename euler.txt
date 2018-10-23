@@ -459,3 +459,13 @@ end #for i
 
 puts 'score ' + score.to_s
 
+
+#13 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
+(?? What am I missing? This was too easy.....)
+
+t_sum = 0
+f = open('euler13','r')
+z = f.readlines()
+for n in z:
+    t_sum += int(n)
+print( str(t_sum)[:10])
